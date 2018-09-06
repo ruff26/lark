@@ -28,7 +28,7 @@ services:
         ports:
             - "3306:3306"
         volumes:
-            - /home/ayuna/docker/blog/mysql/data:/var/lib/mysql
+            - ./.docker/storage/mysql:/var/lib/mysql
         environment:
             - MYSQL_DATABASE=laravel
             - MYSQL_USER=user
